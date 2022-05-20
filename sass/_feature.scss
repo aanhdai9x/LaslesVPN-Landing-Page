@@ -1,0 +1,40 @@
+.feature{
+    padding-bottom: 130px;
+    &-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 170px;
+    }
+    &-desc{
+        margin-bottom: 20px;
+    }
+    &-list{
+        list-style-type: none;
+    }
+    &-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 21px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .feature-container{
+        gap: 0 20px;
+    }
+    .feature{
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .feature-container{
+        flex-direction: column;
+    }
+    .feature{
+        padding-bottom: 20px;
+    }
+}
